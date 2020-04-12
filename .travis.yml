@@ -14,7 +14,7 @@ after_success:
    - docker build -t anshushunov/multi-nginx ./nginx
    - docker build -t anshushunov/multi-server ./server
    - docker build -t anshushunov/multi-worker ./worker
-   # Log in to docker CLI
+   # Log in to docker  CLI
    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
    # Push to docker hub
    - docker push anshushunov/multi-client
